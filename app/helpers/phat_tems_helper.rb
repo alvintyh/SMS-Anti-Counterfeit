@@ -1,0 +1,2 @@
+module PhatTemsHelper
+end

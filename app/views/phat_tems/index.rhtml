@@ -1,0 +1,18 @@
+<% title "Products" %>
+
+<% form_tag phat_tems_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+ 
+<% end %>
+
+
+<% for product in @products %>
+  <div class="product">
+    <h2><%= link_to product.name, product %></h2>
+    </div>
+<% end %>
+
+<p><%= link_to "New Product", new_product_path %></p>

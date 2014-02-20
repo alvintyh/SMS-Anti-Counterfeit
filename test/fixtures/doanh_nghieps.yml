@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ten: MyString
+  viet_tat: MyString
+  ma_so_thue: MyString
+  dia_chi: MyText
+  dien_thoai: 1
+  phap_ly: MyString
+  giao_dich: MyString
+
+two:
+  ten: MyString
+  viet_tat: MyString
+  ma_so_thue: MyString
+  dia_chi: MyText
+  dien_thoai: 1
+  phap_ly: MyString
+  giao_dich: MyString

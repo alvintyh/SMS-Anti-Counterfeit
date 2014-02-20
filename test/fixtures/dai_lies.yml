@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ten: MyString
+  diachi: MyText
+  email: MyString
+  sdt: MyString
+
+two:
+  ten: MyString
+  diachi: MyText
+  email: MyString
+  sdt: MyString

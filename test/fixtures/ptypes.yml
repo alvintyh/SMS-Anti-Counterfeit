@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pack_type: 9.99
+  type_name: MyText
+
+two:
+  pack_type: 9.99
+  type_name: MyText

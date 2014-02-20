@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pack_id: MyString
+  pack_type: 9.99
+  description: MyText
+
+two:
+  pack_id: MyString
+  pack_type: 9.99
+  description: MyText

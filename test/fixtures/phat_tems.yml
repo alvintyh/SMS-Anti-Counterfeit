@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pin_id: MyString
+  dn_id: MyString
+  sp_id: MyString
+  lo_id: MyString
+  tem_type: MyString
+  kh: MyString
+  so_kh: MyString
+  sdt: MyString
+
+two:
+  pin_id: MyString
+  dn_id: MyString
+  sp_id: MyString
+  lo_id: MyString
+  tem_type: MyString
+  kh: MyString
+  so_kh: MyString
+  sdt: MyString

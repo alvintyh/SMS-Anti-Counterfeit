@@ -1,0 +1,33 @@
+
+<%= stylesheet_link_tag    "users" %>
+<%= javascript_include_tag "users" %>
+ <%= csrf_meta_tag %>
+
+<h1>Editing Profile</h1>
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div class="error_messages">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label "Tên Người" %><br />
+    <%= f.text_field :username %>
+  </div>
+  <div class="field">
+    <%= f.label "Emails" %><br />
+    <%= f.text_field :email %>
+  </div>
+
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

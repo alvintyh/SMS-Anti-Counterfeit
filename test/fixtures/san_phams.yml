@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ma_cap_phep: MyString
+  ten_san_pham: 
+  ngay_cap: 2013-07-17
+  xuat_xu: MyString
+  so_luong: MyString
+
+two:
+  ma_cap_phep: MyString
+  ten_san_pham: 
+  ngay_cap: 2013-07-17
+  xuat_xu: MyString
+  so_luong: MyString

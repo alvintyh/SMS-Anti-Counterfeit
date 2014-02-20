@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  captem_id: 1
+  san_pham_id: 1
+
+two:
+  captem_id: 1
+  san_pham_id: 1

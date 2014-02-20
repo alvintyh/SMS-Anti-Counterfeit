@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pack_id: MyString
+  pin: MyString
+  printed: 9.99
+
+two:
+  pack_id: MyString
+  pin: MyString
+  printed: 9.99

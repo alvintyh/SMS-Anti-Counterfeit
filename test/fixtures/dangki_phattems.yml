@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ten_sp: MyString
+  luong_sp: 1
+  luong_lo: 1
+
+two:
+  ten_sp: MyString
+  luong_sp: 1
+  luong_lo: 1

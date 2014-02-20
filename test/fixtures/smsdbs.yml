@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  sodienthoai: MyString
+  error: MyString
+  pin: MyString
+  lo: MyString
+
+two:
+  sodienthoai: MyString
+  error: MyString
+  pin: MyString
+  lo: MyString

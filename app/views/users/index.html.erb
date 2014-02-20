@@ -1,0 +1,18 @@
+
+<%= form_for @search do |f| %>
+  <p>
+    <%= f.label :name_contains %>
+    <%= f.text_field :name_contains %>
+  </p>
+ 
+  <p class="button"><%= f.submit "Search" %></p>
+<% end %>
+
+
+<% for product in @products %>
+  <div class="product">
+    <h2><%= link_to product.san_pham_id, product %></h2>
+    </div>
+<% end %>
+
+<p><%= link_to "New Product", new_product_path %></p>

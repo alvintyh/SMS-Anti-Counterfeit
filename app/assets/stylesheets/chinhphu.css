@@ -1,0 +1,138 @@
+body {
+	background: none;
+
+}
+.navbar-fixed-top .navbar-inner {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	padding: 0;
+	margin: 0;
+	background: #fff;
+}
+.navbar-fixed-top {
+	position: relative;
+}
+.navbar-fixed-top .container {
+	background:#b70002;
+}
+#landing {
+	padding: 0;
+	margin: 0;
+	background: #fff;
+}
+.no-space {
+	padding: 0;
+	margin: 0;
+}
+.time {
+	background: #ccc;
+	text-align: right;
+	margin-bottom: 10px;
+}
+
+.left-nav {
+list-style: none;
+width: 177px;
+}
+.left-nav img {
+	width: 177px;
+}
+.left-nav > li {
+	width: 166px;
+	background: url(bgr_left.jpg) repeat;
+	height: 25px;
+	padding: 3px 5px;
+	border:1px solid #f0ae5a;
+}
+.article {}
+.article h2 {
+	font-size: 16px;
+line-height: 20px;
+}
+
+.listtrangtin {
+	list-style: none;
+	background: url(bgr_page.jpg) repeat;
+float: left;
+position: relative;
+padding: 10px;
+border: 1px solid #ccc;
+}
+.listtrangtin img {
+	float: left;
+	margin-right: 10px;
+}
+.listtrangtin > li {
+	position: relative;
+float: left;
+padding-bottom: 10px;
+margin-top: 5px;
+border-bottom: 1px solid #ccc;
+} 
+.listtrangtin h3 {
+font-size: 14px;
+line-height: 14px;
+text-align: left;
+}
+.listtrangtin a {}
+
+#copywrite {
+	background: #fff;
+color: #000;
+}
+.red {
+	margin: 0;
+height: 5px;
+background: #9a0000;
+}
+#copywrite .container {
+	background: url(bgr_page.jpg) repeat;
+	text-align: center;
+}
+.hanhchinh {
+	background: url(bgr_right.jpg) repeat;
+padding: 5px 10px;
+text-align: center;
+border:1px solid #a3c3f2;
+margin-bottom: 5px;
+}
+.hanhchinh a {
+	font-size: 14px;
+font-weight: 500;
+text-transform: uppercase;
+color: #990000;
+}
+
+/* slide */
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }

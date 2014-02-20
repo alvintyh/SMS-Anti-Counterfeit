@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head> 
+    <meta charset="utf-8" />
+    <title>Bounce | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Myapp" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Myapp" %>">
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <%= yield(:head) %>
+    
+  </head>
+  <body class="no-space">
+
+	<div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+        	<%= image_tag "header_cp.jpg" %>
+          <a class="btn btn-primary btn-dropnav" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>		
+          <!-- <a class="brand" href="index.html">SMS </a> -->
+		  <div class="nav-collapse collapse">
+            <ul class="nav pull-right animated">
+			  <ul class="nav pull-right animated">
+			  
+              <li><a href="about.html">Trang Chủ</a></li>		  
+			  <li><a href="search.html">Tra Cứu</a></li>		  
+			  
+			  <li><a href="../admin">Đăng Nhập</a></li>
+			  <li><a href="contact2">Liên Hệ</a></li>
+			  
+            </ul>
+            </ul>
+		  </div>
+        </div>
+      </div>
+    </div>	
+	
+	<div id="landing" class="no-space">
+		<!-- header -->
+	  <div class="container">  
+	  	<div class="time">Thứ hai, 09/09/2013</div>
+
+	
+	<div id="content">
+	  <div class="container">			
+	    <div class="row">
+		  <div class="span12">	
+			<p class="align-justify">Hiện nay, hiện tượng làm giả, làm nhái các sản phẩm uy tín đang ngày một lan rộng, trở thành vấn nạn trong xã hội. Đặc biệt, những sản phẩm thiết yếu hằng ngày, ảnh hưởng đến sức khỏe và sự phát triển của toàn cộng đồng như sữa bột, thực phẩm,… lại là những sản phẩm đang bị làm giả nhiều nhất.
+			</p>
+			<p>Nhằm bảo vệ quyền lợi chính đáng của người tiêu dùng và doanh nghiệp, dịch vụ “Xác thực” thông qua “Tem xác thực” ra đời dựa trên sự bảo trợ thông tin của Cổng thông tin điện tử Chính phủ (chinhphu.vn) và Viện Kiểm nghiệm Vệ sinh An toàn thực phẩm Trung ương
+			</p>
+			<p>“Tem xác thực” được dán trực tiếp lên từng sản phẩm, qua đó người tiêu dùng có thể xác minh nguồn gốc hàng hóa. Trên mỗi “Tem xác thực” là một dãy 6 ký tự (bao gồm cả chữ và số) được phủ lớp tráng bạc. </p>
+			<p><center><img alt="" src="http://i.imgur.com/rKCi2ao.png?1" height="300"/></center></p>
+
+			<p>Người tiêu dùng chỉ cần cào nhẹ lớp tráng bạc, tra cứu thông tin sản phẩm thông qua các hình thức:
+			</p>
+			<br/>
+			<p>
+			-	Qua tin nhắn SMS: soạn tin “XT (mã số)” gửi 8137
+			</p>
+			<p>
+			
+			-	Qua tổng đài Call Centre 19006609 (nhánh 1)
+			</p>
+			<p>
+			
+			-	Qua website www.temxacthuc.vn
+			</p>
+			<br/>
+			<p>
+			Chỉ bằng vài thao tác đơn giản, người tiêu dùng sẽ được cung cấp các thông tin:
+			</p>
+			<br/>
+			<p>
+			
+			-	Tên sản phẩm
+			</p>
+			<p>
+			
+			-	Tên đơn vị sản xuất/nhập khẩu
+			</p>
+			<p>
+			
+			-	Ngày tháng đăng ký xác thực sản phẩm
+			</p>
+			<p>
+			
+			-	Số lần tra cứu của mã xác thực
+			</p>
+			<p>
+			
+			Tất cả những thông tin trên sẽ giúp doanh nghiệp khẳng định uy tín đối với người tiêu dùng, người tiêu dùng sẽ tin tưởng và sử dụng sản phẩm của doanh nghiệp, các cơ quan chức năng có thêm cơ sở để phát hiện những sản phẩm nhái, giả hoặc kém chất lượng.
+			</p>
+		  </div>
+		  
+        
+
+		</div>		
+	  </div>
+	</div>
+
+
+	<div id="copywrite">
+
+	  <div class="container">
+	  	<hr class="red" />
+	    <div class="row">
+		  <div class="span12">
+		    <strong>© CỔNG THÔNG TIN ĐIỆN 
+	TỬ CHÍNH PHỦ</strong><br>
+
+	Tổng Giám đốc: Phạm Việt Dũng<br>
+	Trụ sở: 16 Lê Hồng Phong - Ba Đình - Hà Nội.<br>
+	Điện thoại: Văn phòng: 080 43162; Fax: 080.48924; Email: <a href="mailto:thongtinchinhphu@chinhphu.vn" style="font-family:Arial; font-size:11px; text-decoration:underline;" target=""> 
+	thongtinchinhphu@chinhphu.vn</a>.<br>
+Bản quyền thuộc Cổng Thông tin điện tử Chính phủ.<br>
+	Ghi rõ nguồn 'Cổng Thông tin điện tử Chính phủ' hoặc '<a href="http://www.chinhphu.vn" style="font-family:Arial; font-size:11px; text-decoration:underline;" target="">www.chinhphu.vn</a>' 
+	khi phát hành lại thông tin từ các nguồn này. 
+	
+		  </div>		  
+		</div>	  
+      </div>	  
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.fitvids.js"></script>
+	<script src="js/jqBootstrapValidation.js"></script>
+	<script src="js/bounce.js"></script>	
+
+  </body>
+</html>
