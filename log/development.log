@@ -218,3 +218,318 @@ Served asset /active_admin.css - 304 Not Modified (9ms)
 
 Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-02-20 17:23:48 +0700
 Served asset /active_admin/print.css - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-02-22 14:40:58 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mDoanhNghiep Load (0.4ms)[0m  SELECT "doanh_nghieps".* FROM "doanh_nghieps" ORDER BY id desc LIMIT 5
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "san_phams" WHERE "san_phams"."doanh_nghiep_id" = 2[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "san_phams" WHERE "san_phams"."doanh_nghiep_id" = 1
+  [1m[36mDaiLy Load (0.1ms)[0m  [1mSELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."id" = 2 LIMIT 1[0m
+  [1m[35mDaiLy Load (0.1ms)[0m  SELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."id" = 1 LIMIT 1
+  [1m[36mDaiLy Load (0.1ms)[0m  [1mSELECT "dai_lies".* FROM "dai_lies" ORDER BY id desc[0m
+  [1m[35mCaptem Load (0.9ms)[0m  SELECT "captems".* FROM "captems" WHERE "captems"."dai_ly_id" = 2
+  [1m[36mCaptem Load (0.3ms)[0m  [1mSELECT "captems".* FROM "captems" WHERE "captems"."dai_ly_id" = 1[0m
+  [1m[35mDangkiCaptem Load (0.4ms)[0m  SELECT "dangki_captems".* FROM "dangki_captems" WHERE "dangki_captems"."dai_ly_id" = 2
+  [1m[36mDangkiCaptem Load (0.1ms)[0m  [1mSELECT "dangki_captems".* FROM "dangki_captems" WHERE "dangki_captems"."dai_ly_id" = 1[0m
+  [1m[35mSmsdb Load (0.4ms)[0m  SELECT "smsdbs".* FROM "smsdbs" ORDER BY id desc LIMIT 10
+  [1m[36mPrintManager Load (0.6ms)[0m  [1mSELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 977 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 977 LIMIT 1
+  [1m[36mPrintManager Load (0.1ms)[0m  [1mSELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 985 LIMIT 1[0m
+  [1m[35mPrintManager Load (0.4ms)[0m  SELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 4 LIMIT 1
+  [1m[36mPrintManager Load (0.4ms)[0m  [1mSELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 11573 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 11573 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 11573 LIMIT 1[0m
+  [1m[35mPackage Load (0.6ms)[0m  SELECT "packages".* FROM "packages" WHERE "packages"."id" = 17 LIMIT 1
+  [1m[36mCaptem Load (0.1ms)[0m  [1mSELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 17 LIMIT 1[0m
+  [1m[35mPhattem Load (0.4ms)[0m  SELECT "phattems".* FROM "phattems" WHERE "phattems"."captem_id" = 17 LIMIT 1
+  [1m[36mSanPham Load (0.1ms)[0m  [1mSELECT "san_phams".* FROM "san_phams" WHERE "san_phams"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "packages".* FROM "packages" WHERE "packages"."id" = 17 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 17 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phattems".* FROM "phattems" WHERE "phattems"."captem_id" = 17 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "san_phams".* FROM "san_phams" WHERE "san_phams"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "packages".* FROM "packages" WHERE "packages"."id" = 17 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 17 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phattems".* FROM "phattems" WHERE "phattems"."captem_id" = 17 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "san_phams".* FROM "san_phams" WHERE "san_phams"."id" = 1 LIMIT 1[0m
+  [1m[35mPackage Load (0.1ms)[0m  SELECT "packages".* FROM "packages" WHERE "packages"."id" = 1 LIMIT 1
+  [1m[36mCaptem Load (0.1ms)[0m  [1mSELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 1 LIMIT 1[0m
+  [1m[35mPhattem Load (0.1ms)[0m  SELECT "phattems".* FROM "phattems" WHERE "phattems"."captem_id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "packages".* FROM "packages" WHERE "packages"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phattems".* FROM "phattems" WHERE "phattems"."captem_id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "packages".* FROM "packages" WHERE "packages"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phattems".* FROM "phattems" WHERE "phattems"."captem_id" = 1 LIMIT 1
+  [1m[36mPackage Load (0.3ms)[0m  [1mSELECT "packages".* FROM "packages" WHERE "packages"."id" = 193 LIMIT 1[0m
+  [1m[35mCaptem Load (0.1ms)[0m  SELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 193 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "packages".* FROM "packages" WHERE "packages"."id" = 193 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 193 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "packages".* FROM "packages" WHERE "packages"."id" = 193 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 193 LIMIT 1
+  [1m[36mDoanhNghiep Load (0.1ms)[0m  [1mSELECT "doanh_nghieps".* FROM "doanh_nghieps" WHERE "doanh_nghieps"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "doanh_nghieps".* FROM "doanh_nghieps" WHERE "doanh_nghieps"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "doanh_nghieps".* FROM "doanh_nghieps" WHERE "doanh_nghieps"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."id" = 1 LIMIT 1
+  Rendered /Users/macintoshhd/.rvm/gems/ruby-1.9.3-p448/gems/activeadmin-0.6.0/app/views/active_admin/page/index.html.arb (355.4ms)
+Completed 200 OK in 401ms (Views: 356.5ms | ActiveRecord: 9.1ms | Solr: 0.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-02-22 14:40:59 +0700
+Served asset /active_admin/print.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2014-02-22 14:40:59 +0700
+Served asset /active_admin.js - 304 Not Modified (32ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-02-22 14:40:59 +0700
+Served asset /active_admin.css - 304 Not Modified (12ms)
+
+
+Started GET "/admin/doanh_nghieps" for 127.0.0.1 at 2014-02-22 14:45:42 +0700
+Processing by Admin::DoanhNghiepsController#index as HTML
+  [1m[36mAdminUser Load (0.1ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "doanh_nghieps" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "doanh_nghieps" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "doanh_nghieps" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mDoanhNghiep Load (0.2ms)[0m  [1mSELECT "doanh_nghieps".* FROM "doanh_nghieps" ORDER BY "doanh_nghieps"."id" desc LIMIT 30 OFFSET 0[0m
+  [1m[35mDaiLy Load (0.1ms)[0m  SELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."id" = 2 LIMIT 1
+  [1m[36mDaiLy Load (0.1ms)[0m  [1mSELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."id" = 1 LIMIT 1[0m
+  Rendered /Users/macintoshhd/.rvm/gems/ruby-1.9.3-p448/gems/activeadmin-0.6.0/app/views/active_admin/resource/index.html.arb (44.8ms)
+Completed 200 OK in 86ms (Views: 47.0ms | ActiveRecord: 0.8ms | Solr: 0.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-02-22 14:45:42 +0700
+Served asset /active_admin.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2014-02-22 14:45:42 +0700
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-02-22 14:45:42 +0700
+Served asset /active_admin/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2014-02-22 14:45:42 +0700
+Served asset /active_admin/orderable.png - 304 Not Modified (3ms)
+
+
+Started GET "/admin/dangki_captems" for 127.0.0.1 at 2014-02-22 14:45:43 +0700
+Processing by Admin::DangkiCaptemsController#index as HTML
+  [1m[35mAdminUser Load (0.1ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "dangki_captems" [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "dangki_captems" WHERE "dangki_captems"."approve" = 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "dangki_captems" WHERE "dangki_captems"."approve" = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "dangki_captems" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "dangki_captems" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "dangki_captems" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mDangkiCaptem Load (0.1ms)[0m  [1mSELECT "dangki_captems".* FROM "dangki_captems" ORDER BY "dangki_captems"."id" desc LIMIT 30 OFFSET 0[0m
+  [1m[35mDaiLy Load (0.1ms)[0m  SELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."id" = 1 LIMIT 1[0m
+  [1m[35mDaiLy Load (0.1ms)[0m  SELECT "dai_lies".* FROM "dai_lies" 
+  Rendered /Users/macintoshhd/.rvm/gems/ruby-1.9.3-p448/gems/activeadmin-0.6.0/app/views/active_admin/resource/index.html.arb (161.9ms)
+Completed 200 OK in 170ms (Views: 164.6ms | ActiveRecord: 0.9ms | Solr: 0.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-02-22 14:45:43 +0700
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2014-02-22 14:45:43 +0700
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-02-22 14:45:44 +0700
+Served asset /active_admin/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/admin/smsdbs" for 127.0.0.1 at 2014-02-22 14:45:44 +0700
+Processing by Admin::SmsdbsController#index as HTML
+  [1m[36mAdminUser Load (0.1ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "smsdbs" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "smsdbs" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "smsdbs" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mSmsdb Load (0.1ms)[0m  [1mSELECT "smsdbs".* FROM "smsdbs" ORDER BY "smsdbs"."id" desc LIMIT 30 OFFSET 0[0m
+  [1m[35mPrintManager Load (0.1ms)[0m  SELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 977 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 977 LIMIT 1[0m
+  [1m[35mPrintManager Load (0.1ms)[0m  SELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 985 LIMIT 1
+  [1m[36mPrintManager Load (0.1ms)[0m  [1mSELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 4 LIMIT 1[0m
+  [1m[35mPrintManager Load (0.1ms)[0m  SELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 11573 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 11573 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 11573 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 11573 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 11573 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 11573 LIMIT 1[0m
+  [1m[35mPackage Load (0.1ms)[0m  SELECT "packages".* FROM "packages" WHERE "packages"."id" = 17 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "packages".* FROM "packages" WHERE "packages"."id" = 17 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "packages".* FROM "packages" WHERE "packages"."id" = 17 LIMIT 1
+  [1m[36mPackage Load (0.1ms)[0m  [1mSELECT "packages".* FROM "packages" WHERE "packages"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "packages".* FROM "packages" WHERE "packages"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "packages".* FROM "packages" WHERE "packages"."id" = 1 LIMIT 1[0m
+  [1m[35mPackage Load (0.1ms)[0m  SELECT "packages".* FROM "packages" WHERE "packages"."id" = 193 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "packages".* FROM "packages" WHERE "packages"."id" = 193 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "packages".* FROM "packages" WHERE "packages"."id" = 193 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "packages".* FROM "packages" WHERE "packages"."id" = 193 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "packages".* FROM "packages" WHERE "packages"."id" = 193 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "packages".* FROM "packages" WHERE "packages"."id" = 193 LIMIT 1[0m
+  [1m[35mCaptem Load (0.1ms)[0m  SELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 17 LIMIT 1
+  [1m[36mPhattem Load (0.1ms)[0m  [1mSELECT "phattems".* FROM "phattems" WHERE "phattems"."captem_id" = 17 LIMIT 1[0m
+  [1m[35mSanPham Load (0.1ms)[0m  SELECT "san_phams".* FROM "san_phams" WHERE "san_phams"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 17 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phattems".* FROM "phattems" WHERE "phattems"."captem_id" = 17 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "san_phams".* FROM "san_phams" WHERE "san_phams"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 17 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phattems".* FROM "phattems" WHERE "phattems"."captem_id" = 17 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "san_phams".* FROM "san_phams" WHERE "san_phams"."id" = 1 LIMIT 1
+  [1m[36mCaptem Load (0.1ms)[0m  [1mSELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 1 LIMIT 1[0m
+  [1m[35mPhattem Load (0.1ms)[0m  SELECT "phattems".* FROM "phattems" WHERE "phattems"."captem_id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phattems".* FROM "phattems" WHERE "phattems"."captem_id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phattems".* FROM "phattems" WHERE "phattems"."captem_id" = 1 LIMIT 1
+  [1m[36mCaptem Load (0.1ms)[0m  [1mSELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 193 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 193 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 193 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 193 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 193 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 193 LIMIT 1
+  [1m[36mDoanhNghiep Load (0.1ms)[0m  [1mSELECT "doanh_nghieps".* FROM "doanh_nghieps" WHERE "doanh_nghieps"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "doanh_nghieps".* FROM "doanh_nghieps" WHERE "doanh_nghieps"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "doanh_nghieps".* FROM "doanh_nghieps" WHERE "doanh_nghieps"."id" = 1 LIMIT 1[0m
+  [1m[35mDaiLy Load (0.1ms)[0m  SELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."id" = 1 LIMIT 1[0m
+  Rendered /Users/macintoshhd/.rvm/gems/ruby-1.9.3-p448/gems/activeadmin-0.6.0/app/views/active_admin/resource/index.html.arb (112.2ms)
+Completed 200 OK in 120ms (Views: 113.3ms | ActiveRecord: 1.6ms | Solr: 0.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-02-22 14:45:44 +0700
+Served asset /active_admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-02-22 14:45:44 +0700
+Served asset /active_admin/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2014-02-22 14:45:44 +0700
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2014-02-22 14:45:46 +0700
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[35mAdminUser Load (0.1ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "admin_users" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "admin_users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "admin_users" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" ORDER BY "admin_users"."id" desc LIMIT 30 OFFSET 0
+  [1m[36mDaiLy Load (0.1ms)[0m  [1mSELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."admin_user_id" = 5 LIMIT 1[0m
+  [1m[35mDaiLy Load (0.1ms)[0m  SELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."admin_user_id" = 4 LIMIT 1
+  [1m[36mDaiLy Load (0.1ms)[0m  [1mSELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."admin_user_id" = 3 LIMIT 1[0m
+  [1m[35mDaiLy Load (0.1ms)[0m  SELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."admin_user_id" = 2 LIMIT 1
+  [1m[36mDaiLy Load (0.1ms)[0m  [1mSELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."admin_user_id" = 1 LIMIT 1[0m
+  [1m[35mDoanhNghiep Load (0.1ms)[0m  SELECT "doanh_nghieps".* FROM "doanh_nghieps" WHERE "doanh_nghieps"."admin_user_id" = 5 LIMIT 1
+  [1m[36mDoanhNghiep Load (0.1ms)[0m  [1mSELECT "doanh_nghieps".* FROM "doanh_nghieps" WHERE "doanh_nghieps"."admin_user_id" = 4 LIMIT 1[0m
+  [1m[35mDoanhNghiep Load (0.1ms)[0m  SELECT "doanh_nghieps".* FROM "doanh_nghieps" WHERE "doanh_nghieps"."admin_user_id" = 3 LIMIT 1
+  [1m[36mDoanhNghiep Load (0.1ms)[0m  [1mSELECT "doanh_nghieps".* FROM "doanh_nghieps" WHERE "doanh_nghieps"."admin_user_id" = 2 LIMIT 1[0m
+  [1m[35mDoanhNghiep Load (0.1ms)[0m  SELECT "doanh_nghieps".* FROM "doanh_nghieps" WHERE "doanh_nghieps"."admin_user_id" = 1 LIMIT 1
+  Rendered /Users/macintoshhd/.rvm/gems/ruby-1.9.3-p448/gems/activeadmin-0.6.0/app/views/active_admin/resource/index.html.arb (86.6ms)
+Completed 200 OK in 94ms (Views: 87.8ms | ActiveRecord: 1.6ms | Solr: 0.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-02-22 14:45:46 +0700
+Served asset /active_admin.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2014-02-22 14:45:46 +0700
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-02-22 14:45:46 +0700
+Served asset /active_admin/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-02-22 14:45:49 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mDoanhNghiep Load (0.2ms)[0m  SELECT "doanh_nghieps".* FROM "doanh_nghieps" ORDER BY id desc LIMIT 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "san_phams" WHERE "san_phams"."doanh_nghiep_id" = 2[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "san_phams" WHERE "san_phams"."doanh_nghiep_id" = 1
+  [1m[36mDaiLy Load (0.1ms)[0m  [1mSELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."id" = 2 LIMIT 1[0m
+  [1m[35mDaiLy Load (0.1ms)[0m  SELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."id" = 1 LIMIT 1
+  [1m[36mDaiLy Load (0.1ms)[0m  [1mSELECT "dai_lies".* FROM "dai_lies" ORDER BY id desc[0m
+  [1m[35mCaptem Load (0.1ms)[0m  SELECT "captems".* FROM "captems" WHERE "captems"."dai_ly_id" = 2
+  [1m[36mCaptem Load (0.4ms)[0m  [1mSELECT "captems".* FROM "captems" WHERE "captems"."dai_ly_id" = 1[0m
+  [1m[35mDangkiCaptem Load (0.1ms)[0m  SELECT "dangki_captems".* FROM "dangki_captems" WHERE "dangki_captems"."dai_ly_id" = 2
+  [1m[36mDangkiCaptem Load (0.1ms)[0m  [1mSELECT "dangki_captems".* FROM "dangki_captems" WHERE "dangki_captems"."dai_ly_id" = 1[0m
+  [1m[35mSmsdb Load (0.1ms)[0m  SELECT "smsdbs".* FROM "smsdbs" ORDER BY id desc LIMIT 10
+  [1m[36mPrintManager Load (0.1ms)[0m  [1mSELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 977 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 977 LIMIT 1
+  [1m[36mPrintManager Load (0.1ms)[0m  [1mSELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 985 LIMIT 1[0m
+  [1m[35mPrintManager Load (0.1ms)[0m  SELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 4 LIMIT 1
+  [1m[36mPrintManager Load (0.1ms)[0m  [1mSELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 11573 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 11573 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "print_managers".* FROM "print_managers" WHERE "print_managers"."id" = 11573 LIMIT 1[0m
+  [1m[35mPackage Load (0.1ms)[0m  SELECT "packages".* FROM "packages" WHERE "packages"."id" = 17 LIMIT 1
+  [1m[36mCaptem Load (0.1ms)[0m  [1mSELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 17 LIMIT 1[0m
+  [1m[35mPhattem Load (0.1ms)[0m  SELECT "phattems".* FROM "phattems" WHERE "phattems"."captem_id" = 17 LIMIT 1
+  [1m[36mSanPham Load (0.1ms)[0m  [1mSELECT "san_phams".* FROM "san_phams" WHERE "san_phams"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "packages".* FROM "packages" WHERE "packages"."id" = 17 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 17 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phattems".* FROM "phattems" WHERE "phattems"."captem_id" = 17 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "san_phams".* FROM "san_phams" WHERE "san_phams"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "packages".* FROM "packages" WHERE "packages"."id" = 17 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 17 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phattems".* FROM "phattems" WHERE "phattems"."captem_id" = 17 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "san_phams".* FROM "san_phams" WHERE "san_phams"."id" = 1 LIMIT 1[0m
+  [1m[35mPackage Load (0.1ms)[0m  SELECT "packages".* FROM "packages" WHERE "packages"."id" = 1 LIMIT 1
+  [1m[36mCaptem Load (0.1ms)[0m  [1mSELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 1 LIMIT 1[0m
+  [1m[35mPhattem Load (0.1ms)[0m  SELECT "phattems".* FROM "phattems" WHERE "phattems"."captem_id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "packages".* FROM "packages" WHERE "packages"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phattems".* FROM "phattems" WHERE "phattems"."captem_id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "packages".* FROM "packages" WHERE "packages"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phattems".* FROM "phattems" WHERE "phattems"."captem_id" = 1 LIMIT 1
+  [1m[36mPackage Load (0.1ms)[0m  [1mSELECT "packages".* FROM "packages" WHERE "packages"."id" = 193 LIMIT 1[0m
+  [1m[35mCaptem Load (0.1ms)[0m  SELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 193 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "packages".* FROM "packages" WHERE "packages"."id" = 193 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 193 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "packages".* FROM "packages" WHERE "packages"."id" = 193 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "captems".* FROM "captems" WHERE "captems"."package_id" = 193 LIMIT 1
+  [1m[36mDoanhNghiep Load (0.1ms)[0m  [1mSELECT "doanh_nghieps".* FROM "doanh_nghieps" WHERE "doanh_nghieps"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "doanh_nghieps".* FROM "doanh_nghieps" WHERE "doanh_nghieps"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "doanh_nghieps".* FROM "doanh_nghieps" WHERE "doanh_nghieps"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "dai_lies".* FROM "dai_lies" WHERE "dai_lies"."id" = 1 LIMIT 1
+  Rendered /Users/macintoshhd/.rvm/gems/ruby-1.9.3-p448/gems/activeadmin-0.6.0/app/views/active_admin/page/index.html.arb (60.1ms)
+Completed 200 OK in 66ms (Views: 61.7ms | ActiveRecord: 2.6ms | Solr: 0.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-02-22 14:45:49 +0700
+Served asset /active_admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2014-02-22 14:45:49 +0700
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-02-22 14:45:49 +0700
+Served asset /active_admin/print.css - 304 Not Modified (0ms)
