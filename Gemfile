@@ -6,7 +6,7 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'redis', '3.0.4'
 
-gem 'pg'
+gem 'sqlite3'
 gem 'ruby-smpp'
 gem 'activeadmin', '0.6.0'
 gem 'cancan', '1.6.10'
